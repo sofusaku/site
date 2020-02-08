@@ -1,0 +1,180 @@
+---
+layout: about
+profile:
+    - item: Full Name
+      value: Muhammad Farrel Rafirizqy
+      icon: user.svg
+    - item: Date of Birth
+      value: April 12, 2002
+      icon: birthday-cake.svg
+    - item: Hometown
+      value: Yogyakarta, Indonesia
+      icon: home.svg
+skills:
+    - category: Technical
+      color: "#2196F3"
+      items:
+        - name: C
+          percentage: 50%
+        - name: C++
+          percentage: 20%
+        - name: Front-End
+          percentage: 30%
+        - name: Linux
+          percentage: 50%
+        - name: UI/UX Design
+          percentage: 25%
+        - name: Graphic Design
+          percentage: 15%
+    - category: Language
+      color: "#00C853"
+      items:
+        - name: Indonesian
+          level: Native
+          percentage: 100%
+        - name: English
+          level: Intermediate
+          percentage: 50%
+        - name: Japanese
+          level: N4 level
+          percentage: 12.5%
+---
+
+<div class="hero entrance">
+    <div class="description">
+        <span class="greeting">Hi there! I'm</span>
+        <h1 class="name">Farrel R</h1>
+        <p>A 17-year-old tech-loving student from Yogyakarta, currently pursuing
+            an Information Engineering major at Universitas Gadjah Mada. I am
+            quite a quiet person&mdash;both in real life and on the internet&mdash;and a semi-perfectionist. I sometimes love
+            making IT-related things from scratch (this site is one of them). Aside
+            from tech, I also love a small subset of Japanese culture.</p>
+        <div class="scroll_cta entrance">
+            <span>Scroll to see more</span>
+            {% include_relative _svg/arrow-down.svg %}
+        </div>
+    </div>
+    <div class="portrait">
+        <img id="me_back" src="{{ site.baseurl }}/assets/me-back.svg">
+        <img id="me_front" src="{{ site.baseurl }}/assets/me-front.png">
+    </div>
+</div>
+<section class="profile">
+    <h1>Profile</h1>
+    <div class="card">
+        <ul>
+            {% for key in page.profile %}<li><div class="circle">{% include_relative _svg/profile/{{ key.icon }} %}</div><span>{{ key.item }}: <b>{{ key.value }}</b></span></li>{% endfor %}
+        </ul>
+    </div>
+</section>
+<div class="section_divider"></div>
+<section class="skills">
+    <h1>Skills</h1>
+    <div class="container">
+        {%- for skill in page.skills -%}
+        <div class="card">
+            <h2>{{ skill.category | upcase }}</h2>
+            <div class="divider"></div>
+            <ul>
+                {%- for item in skill.items -%}
+                <li>
+                    <span>{{ item.name }}</span>
+                    <span>{% if item.level %}{{ item.level }}{% else %}{{ item.percentage }}{% endif %}</span>
+                    <div class="bar outer">
+                        <div class="bar inner" style="width: {{ item.percentage }}; background-color: {{ skill.color }};"></div>
+                    </div>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        {%- endfor -%}
+    </div>
+</section>
+<div class="section_divider"></div>
+<section class="education">
+    <h1>Education</h1>
+    <div class="card">
+        <ul>
+            <li>
+                <div class="node">
+                    <div class="circle lined">大</div><span>Universitas Gadjah Mada</span>
+                </div>
+                <span>Information Engineering major</span>
+                <span>2019&ndash;present</span>
+            </li>
+            <li>
+                <div class="node">
+                    <div class="circle">高</div><span>SMA Negeri 1 Yogyakarta</span>
+                </div>
+                <span>Math and Natural Sciences class</span>
+                <span>2016&ndash;2019</span>
+            </li>
+            <li>
+                <div class="node">
+                    <div class="circle">中</div><span>SMP Negeri 5 Yogyakarta</span>
+                </div>
+                <span>Acceleration class</span>
+                <span>2014&ndash;2016</span>
+            </li>
+            <li>
+                <div class="node">
+                    <div class="circle">小</div><span>SD Negeri Lempuyangwangi</span>
+                </div>
+                <span>2008&ndash;2014</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="section_divider"></div>
+<section class="activities">
+    <h1>Activities</h1>
+    <ul class="container">
+        <div class="line"></div>
+        <li class="card">
+            <span>2020</span>
+            <span>Web Division</span>
+            <span>FIND IT! 2020</span>
+        </li>
+        <li class="card">
+            <span>2017&ndash;2018</span>
+            <span>Head of Production</span>
+            <span>High School Journalistic Club "SIGMA"</span>
+        </li>
+        <li class="card">
+            <span>2017</span>
+            <span>Multimedia Division</span>
+            <span>ICEF Teladan 2017</span>
+            <span>(<a class="external_link" target="_blank" href="https://youtu.be/wcnvv4pLa5U">Relevant work{% include external-link-alt.svg %}</a>)</span>
+        </li>
+        <li class="card">
+            <span>2017</span>
+            <span>Multimedia Division</span>
+            <span>Tes Uji Coba 2017</span>
+        </li>
+    </ul>
+</section>
+<div class="section_divider"></div>
+<section class="achievements">
+    <h1>Achievements</h1>
+    <ul>
+        <li class="card">
+            <img src="{{ site.baseurl }}/about/achievements/nsc2018.jpg">
+            <div class="description">
+                <!-- <span>2018</span> -->
+                <span>First Place Winner (Team)</span>
+                <span>Nuclear Smart Competition 2018</span>
+                <span>November 11, 2018</span>
+            </div>
+        </li>
+        <li class="card">
+            <img src="{{ site.baseurl }}/about/achievements/60jpid.jpg">
+            <div class="description">
+                <!-- <span>2018</span> -->
+                <span>Invited to Japan</span>
+                <span>Youth Invitation Program for the 60th Anniversary of Japan-Indonesia Diplomatic Relations</span>
+                <span>July 1&ndash;9, 2018</span>
+            </div>
+        </li>
+    </ul>
+</section>
+<!-- <div style="background-color: white; height: 100px;"></div> -->

@@ -1,0 +1,37 @@
+---
+---
+.stickybar_container {
+    height: 100%;
+    width: 75px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stickybar_corner_elem_placeholder {
+    width: 75px;
+    height: 75px;
+    background-color: inherit;
+    transition: all 0.4s;
+    &:hover {
+        background-color: #333333;
+        width: 50vw;
+        // border-radius: 0 10px 10px 0;
+        box-shadow: 0 0 50px black;
+    }
+    &.first:hover {
+        border-radius: 0 0 10px 0;
+    }
+    &.last:hover {
+        border-radius: 0 10px 0 0;
+    }
+}
+
+.stickybar_center_elem {
+    padding: 12px;
+    img {
+        max-width: 100%;
+    }
+}

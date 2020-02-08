@@ -1,0 +1,17 @@
+---
+layout: landing
+---
+
+<div class="background"></div>
+<div class="main_container">
+    <nav class="top_nav entrance">{% include navigation.html active="home" %}</nav>
+    <div class="middle_hero entrance">
+        {% capture logo %} {% include comfyte-logo.svg %} {% endcapture %} {{ logo | replace: 'svg width=', 'svg class="entrance" width=' | replace: 'id="upper', 'class="entrance" id="upper' | replace: 'id="lower', 'class="entrance" id="lower' }}
+        <h1 class="entrance">Farrel R</h1>
+        <div class="desc_text entrance">
+            <h2 class="main">Tech enthusiast</h2>
+        </div>
+    </div>
+    <div class="bottom_social entrance">{% include social-buttons.html %}</div>
+</div>
+<div class="attribution entrance">{%- include info-circle.svg -%}<span>Loading background...</span></div>

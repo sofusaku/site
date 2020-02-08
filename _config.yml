@@ -1,0 +1,12 @@
+navigation:
+  - label: home
+    active_match: home
+  - label: about me
+    path: /about
+    active_match: about
+  - label: projects
+    path: /projects
+    active_match: projects
+  - label: blog
+    path: /blog
+    active_match: blog

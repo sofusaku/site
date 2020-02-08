@@ -1,0 +1,6 @@
+<ul class="nav_container">{% for nav in site.navigation %}
+    <li class="navigation{% if include.active == nav.active_match %} active{% endif %}">
+        <a href="{{ site.url }}{{ nav.path }}">{{ nav.label }}</a>
+        <div class="nav_underline"></div>
+    </li>{% endfor %}
+</ul>

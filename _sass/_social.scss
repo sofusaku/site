@@ -1,0 +1,42 @@
+.social_buttons {
+    display: block;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    &:hover {
+        a {
+            opacity: 0.5;
+            &:hover {
+                opacity: 1;
+                svg {
+                    transform: translateY(-1px);
+                }
+            }
+            &:active svg {
+                transform: translateY(1px);
+            }
+        }
+    }
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0.3rem;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        display: block;
+        transition: opacity 0.2s;
+    }
+    svg {
+        display: block;
+        // fill: white;
+        height: 1.25em; // change to 1.4rem?
+        width: auto; //verify this
+        transition: transform 0.2s;
+    }
+}

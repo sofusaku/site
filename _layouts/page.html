@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+    <title>{{ layout.html_title }}</title>
+    {% for csspath in layout.csslist %}<link rel="stylesheet" href="{{ site.baseurl }}{{ csspath }}">{% endfor %}
+    {% for jspath in layout.jslist %}<script src="{{ site.baseurl }}{{ jspath }}"></script>{% endfor %}
+</head>
+
+<body>
+    {% include topbar.html active=layout.active_nav %}
+    <div class="content">
+        {{ content }}
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
