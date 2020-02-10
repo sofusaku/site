@@ -379,8 +379,8 @@ section.education {
                 justify-content: center;
                 background-color: black;
                 color: white;
-                @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-                font-family: 'Noto Sans Japanese', sans-serif;
+                // @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+                // font-family: 'Noto Sans Japanese', sans-serif;
                 line-height: 0;
                 &.lined::before {
                     content: "";
