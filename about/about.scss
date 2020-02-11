@@ -361,6 +361,9 @@ section.education {
     ul {
         margin: 0 auto;
         padding: 0;
+        width: -webkit-fill-available;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     li {
