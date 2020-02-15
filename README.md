@@ -6,10 +6,10 @@ Farrel R's personal static website built with [Jekyll](https://jekyllrb.com).
 
 ## To-Do
 
-- [x] **Landing (home) page**
+- [x] ~~**Landing (home) page**~~
 - [ ] Provide background image using Unsplash API (with Netlify Functions)
 - [ ] Add noscript notice
-- [x] **About Me page**
+- [x] ~~**About Me page**~~
 - [ ] **Projects page**
 - [ ] **Blog page**
 - [ ] Blog search ability
