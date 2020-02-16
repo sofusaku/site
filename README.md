@@ -10,6 +10,7 @@ Farrel R's personal static website built with [Jekyll](https://jekyllrb.com).
   - [ ] Provide background image using Unsplash API (with Netlify Functions)
   - [ ] Add noscript notice
 - [x] ~~**About Me page**~~
+  - [ ] Use `requestAnimationFrame` for scroll effect
 - [ ] **Projects page**
 - [ ] **Blog page**
   - [ ] Blog search ability
