@@ -14,18 +14,18 @@ skills:
     - category: Technical
       color: "#2196F3"
       items:
-        - name: C
-          percentage: 50%
-        - name: C++
-          percentage: 20%
-        - name: Front-End
+        - name: C/C++
+          percentage: 40%
+        - name: C#
+          percentage: 25%
+        - name: JavaScript
           percentage: 30%
+        - name: HTML+CSS
+          percentage: 60%
         - name: Linux
           percentage: 50%
         - name: UI/UX Design
           percentage: 25%
-        - name: Graphic Design
-          percentage: 15%
     - category: Language
       color: "#00C853"
       items:
@@ -73,7 +73,7 @@ skills:
     <div class="container">
         {%- for skill in page.skills -%}
         <div class="card">
-            <h2>{{ skill.category | upcase }}</h2>
+            <h2>{{ skill.category }}</h2>
             <div class="divider"></div>
             <ul>
                 {%- for item in skill.items -%}
