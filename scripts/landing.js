@@ -9,7 +9,7 @@
 var desc_list = [
     "Tech enthusiast",
     "Indonesian",
-    "17",   // TODO: Make a function
+    "18",   // TODO: Make a function
     "IE student",
     "La<3"
 ];
