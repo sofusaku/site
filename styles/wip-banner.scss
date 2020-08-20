@@ -1,0 +1,36 @@
+---
+---
+
+.wip-banner {
+    width: 100%;
+    padding: 0.5em;
+
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    color: black;
+
+    $stripes-color: rgb(0 0 0 / 0.05);
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        $stripes-color 10px,
+        $stripes-color 20px
+    ) #FFEB3B;
+
+    svg, span {
+        display: block;
+    }
+}
+
+.wip-banner svg {
+    height: 1em;
+    width: auto;
+    margin-right: 0.5em;
+}
