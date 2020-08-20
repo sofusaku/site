@@ -5,6 +5,7 @@
     {% include head.html %}
     <title>{{ layout.html_title }}</title>
     {% for csspath in layout.csslist %}<link rel="stylesheet" href="{{ site.baseurl }}{{ csspath }}">{% endfor %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles/wip-banner.css"> <!-- WIP banner message -->
     {% for jspath in layout.jslist %}<script src="{{ site.baseurl }}{{ jspath }}"></script>{% endfor %}
 </head>
 
