@@ -13,15 +13,16 @@
     justify-content: center;
 
     font-family: "Inter", sans-serif;
+    font-size: 0.8em;
     color: black;
 
     $stripes-color: rgba(0, 0, 0, 0.05);
     background: repeating-linear-gradient(
         45deg,
         transparent,
-        transparent 10px,
-        $stripes-color 10px,
-        $stripes-color 20px
+        transparent 15px,
+        $stripes-color 15px,
+        $stripes-color 30px
     ) #FFEB3B;
 
     svg, span {
@@ -32,5 +33,5 @@
 .wip-banner svg {
     height: 1em;
     width: auto;
-    margin-right: 0.5em;
+    margin-right: 0.6em;
 }
