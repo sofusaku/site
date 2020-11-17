@@ -3,7 +3,7 @@ url: https://comfyte.com #?
 navigation:
   - label: home
     active_match: home
-  - label: about me
+  - label: know me
     path: /about
     active_match: about
   - label: projects
