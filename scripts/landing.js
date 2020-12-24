@@ -57,7 +57,7 @@ function fetch_background() {
     $.getJSON(URL, function(photo) {
         if (photo && photo.urls.regular) {
             function a(hrf, txt) {
-                return '<a target="_blank" href="' + hrf + '?utm_source=comfyte.com&utm_medium=referral">' + txt + '</a>';
+                return '<a target="_blank" href="' + hrf + '?utm_source=farrel.dev&utm_medium=referral">' + txt + '</a>';
             }
             var attribution = 'Photo by ' + a(photo.user.links.html, photo.user.name) + ' on ' + a(photo.links.html, 'Unsplash');
             console.log(photo);
