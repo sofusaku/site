@@ -12,3 +12,5 @@ navigation:
   - label: blog
     path: /blog
     active_match: blog
+
+include: [_redirects]
