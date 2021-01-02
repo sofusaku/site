@@ -5,10 +5,12 @@
     {% include head.html %}
     <title>comfyte (PREVIEW)</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/styles/landing.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles/wip-banner.css"> <!-- WIP banner message -->
     <script src="{{ site.baseurl }}/scripts/landing.js"></script>
 </head>
 
 <body>
+    {% include wip-banner.html %} <!-- WIP banner message -->
     {{ content }}
 </body>
 
