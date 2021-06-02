@@ -449,7 +449,9 @@ section.activities {
         &:nth-child(2) {
             font-weight: bold;
         }
-        a.external_link {
+        a.relevant_link {
+            line-height: 1.5rem; // HACK
+            
             display: inline-flex;
             align-items: center;
             svg {
