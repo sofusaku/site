@@ -23,12 +23,13 @@
         }
         
         body {
-            /* width: 100%; */
             min-height: 100vh;
             
             display: flex;
             align-items: center;
             justify-content: center;
+            
+            color: var(--content-color);
         }
         
         .container {
@@ -39,7 +40,6 @@
             font-size: 1.25em;
             font-weight: bold;
             letter-spacing: -0.025em;
-            color: var(--content-color);
             text-align: center;
             margin: 0.75em 0 0.5em 0;
         }
@@ -48,10 +48,6 @@
             display: block;
             text-align: center;
             font-size: 0.75em;
-        }
-
-        h1 + span a {
-            color: var(--link-color);
         }
 
         .social_buttons {
@@ -106,7 +102,7 @@
     <div class="container">
         {% include cfy-logo-underconstruction.svg %}
         <h1>Site is currently under construction</h1>
-        <span><a href="/landing-preview">Want to take a peek?</a></span>
+        <span>Come again later!</span>
         <ul class="social_buttons">
             <li><a href="https://github.com/comfyte"                title="GitHub"          >{% include social-icons/github.svg     %}</a></li>
             <li><a href="https://twitter.com/comfyte"               title="Twitter"         >{% include social-icons/twitter.svg    %}</a></li>
