@@ -1,0 +1,15 @@
+{
+    "name": "comfyte-personal-site",
+    "version": "5.0.0",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/comfyte/site.git"
+    },
+    "author": "Farrel R",
+    "homepage": "https://farrel.dev",
+    "devDependencies": {
+        "@11ty/eleventy": "^1.0.0",
+        "@11ty/eleventy-plugin-vue": "^0.7.2"
+    }
+}
